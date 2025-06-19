@@ -63,6 +63,7 @@ steps:
 #      - >-
 #        --labels=managed-by=gcp-cloud-build-deploy-cloud-run,commit-sha=$COMMIT_SHA,gcb-build-id=$BUILD_ID,php-amarcord-github-user=$_GITHUB_USER,devfest-city=$_DEVFEST_CITY
       - '--region=$_DEPLOY_REGION'
+      - '--allow-unauthenticated'
       - '--quiet'
       # Note to self: non va col services..
       - '--allow-unauthenticated'
